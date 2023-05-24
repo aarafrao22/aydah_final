@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/proo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:text="Find Direction"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="٠dp"
+        tools:layout_editor_absoluteY="٩٥dp" />
+
+    <TextView
+        android:id="@+id/etOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Source Address:  Waiting for Source Address"
+        android:textSize="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/etDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Destination Address:  Wait for Destination Address"
+        android:textSize="15dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFindPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/baseline_replay_24"
+            android:text="Reset path"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnroute1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        android:background="#f0f0f0"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/route1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Route 1"
+            android:textColor="#000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_directions_car_24" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="0 km" />
+
+        <!--    <ImageView-->
+        <!--        android:layout_marginLeft="20dp"-->
+        <!--        android:layout_marginTop="5dp"-->
+        <!--        android:layout_width="40dp"-->
+        <!--        android:layout_height="40dp"-->
+        <!--        android:padding="5dp"-->
+        <!--        android:src="@drawable/ic_baseline_access_time_24" />-->
+
+        <!--    <TextView-->
+        <!--        android:layout_marginLeft="5dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="0 min"-->
+        <!--        android:id="@+id/tvDuration" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnroute2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:background="#f0f0f0"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/route2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Route 2"
+            android:textColor="#000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_directions_car_24" />
+
+        <TextView
+            android:id="@+id/tvDistance1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:text="0 km" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:src="@drawable/ic_baseline_access_time_24" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="0 min"-->
+        <!--            android:id="@+id/tvDuration1" />-->
+
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

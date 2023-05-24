@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#fff">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageview"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageview1"
+                android:src="@drawable/ic_baseline_person_24" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#000"
+            android:text="Name: omar"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/imageview"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnview"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="7sp"
+            android:text="view"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="7sp"
+            android:text="delete"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/btnview"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Email: oa4307629@gmail.com"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/imageview"
+            android:layout_below="@id/txtname"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="--------------------------------------------------------------------------"
+            android:textSize="15sp"
+            android:textColor="#CDC7C7"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@id/imageview"
+            android:layout_below="@id/txtemail"
+            android:layout_marginLeft="20dp"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

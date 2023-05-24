@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "665946766353",
+    "project_id": "otlcse",
+    "storage_bucket": "otlcse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665946766353:android:804e0e0446d24cf37bc5b0",
+        "android_client_info": {
+          "package_name": "com.example.otlcse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665946766353-pnoabkif00fa1dd7g8dpth3c7kgphtmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQTXLzjAjmUwD_cPNbgBMjeJtbCBMQeKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665946766353-pnoabkif00fa1dd7g8dpth3c7kgphtmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard"
+    android:background="@drawable/backg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtdasboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#000"
+                android:text="My Dashboard" />
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:text="Admin"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdasboard" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@drawable/user" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_marginTop="50dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#E8DAEF">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/view_user" />
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View user"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/useradd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#E8DAEF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/add_user" />
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add user" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/googlemap"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                app:cardElevation="6dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                android:layout_margin="12dp"-->
+            <!--                app:cardBackgroundColor="#E8DAEF">-->
+
+            <!--                <LinearLayout-->
+
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:padding="16dp"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="60dp"-->
+            <!--                        android:layout_height="60dp"-->
+            <!--                        android:src="@drawable/ic_baseline_googlemap" />-->
+
+
+            <!--                    <TextView-->
+            <!--                        android:layout_marginTop="12dp"-->
+            <!--                        android:textSize="18sp"-->
+            <!--                        android:textColor="#000"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="Map" />-->
+            <!--                </LinearLayout>-->
+
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#E8DAEF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/logouticon" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
