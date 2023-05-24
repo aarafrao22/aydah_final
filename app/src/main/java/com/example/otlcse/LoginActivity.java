@@ -155,7 +155,7 @@ public class LoginActivity extends AppCompatActivity {
         userPassword = md5(userPassword);
         String MD5String = userPassword;
 
-        if (loginUsername.getText().toString().equals("admin@gmail.com")) {
+        if (loginUsername.getText().toString().equals("admin@gmail.com") && loginPassword.getText().toString().equals("Admin@123")) {
             Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_LONG).show();
             startActivity(new Intent(LoginActivity.this, dashboard.class));
         } else {
